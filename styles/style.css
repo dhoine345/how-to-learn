@@ -259,7 +259,8 @@ color: #2f80ed;
   width: 877px;
   height: 877px;
   position: absolute;
-  right: -200px;
+  right: -210px;
+  background-size: cover;
 }
 
 .footer {
