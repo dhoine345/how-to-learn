@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Научиться учиться</title>
-  <link rel="stylesheet" href="./pages/index.css">
+  <link rel="stylesheet" href="./styles/index.css">
 </head>
 
 <body>
@@ -73,10 +73,10 @@
       <section class="video">
         <h2 class="section-title">Видео нa TED</h2>
         <p class="section-subtitle">Для тех, кто любит прокрастинировать</p>
-        <div class="video__iframes">
-          <iframe src="https://www.youtube.com/embed/arj7oStGLkU" class="video__iframe"></iframe>
-          <iframe src="https://www.youtube.com/embed/5MgBikgcWnY" class="video__iframe"></iframe>
-        </div>
+        <ul class="video__iframes">
+          <li><iframe src="https://www.youtube.com/embed/arj7oStGLkU" class="video__iframe"></iframe></li>
+          <li><iframe src="https://www.youtube.com/embed/5MgBikgcWnY" class="video__iframe"></iframe></li>
+        </ul>
       </section>
       <section class="oakley">
         <div class="two-columns">
@@ -96,7 +96,6 @@
         <h2 class="feynman__title">Метод Фейнмана</h2>
         <p class="feynman__subtitle">Выучить и не забыть.</p>
         <a href="#" class="feynman__link">Подробнее&rarr;</a>
-        <img src="./images/feynman.png" class="feynman__image" alt="Ричард Фейнман.">
       </section>
       <section class="digits">
         <h2 class="section-title">Цифры и факты</h2>
@@ -142,10 +141,12 @@
         <div class="khan__container">
           <p class="khan__author">Салман Хан</p>
           <h2 class="khan__title">Весь мир — школа</h2>
-          <p class="khan__quote">Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему
+          <blockquote class="khan__quote">
+            <p>Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему
             миру. Книгу «Весь мир — школа» нужно прочитать всем,
             кто занимается образованием — так учащиеся повсюду смогут получить навыки и знания, которые приносят успех в
             школе, карьере и жизни.</p>
+          </blockquote>
           <p class="khan__quote-author">Джордж Лукас</p>
           <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
           <div class="khan__book-container">
@@ -204,45 +205,45 @@
       </section>
       <section class="resources">
         <h2 class="section-title">Полезные ресурсы</h2>
-        <h3 class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</h3>
-        <div class="resources__logo-zone">
-          <a href="#"><img src="./images/logo/resources-arzamas.svg" class="resources__logo"
-              alt="Просветительский проект арзамас."></a>
-          <a href="#"><img src="./images/logo/resources-n1.svg" class="resources__logo"
-              alt="Научно-популярное интернет-издание н+1."></a>
-          <a href="#"><img src="./images/logo/resources-strelka.svg" class="resources__logo"
-              alt="Институт медиа, архитектуры и дизайна Стрелка."></a>
-          <a href="#"><img src="./images/logo/resources-polka.svg" class="resources__logo"
-              alt="Образовательный проект о самых важных русских книгах полка."></a>
-        </div>
+        <p class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</p>
+        <ul class="resources__logo-zone">
+          <li><a href="#"><img src="./images/logo/resources-arzamas.svg" class="resources__logo"
+              alt="Просветительский проект арзамас." target="_blank"></a></li>
+          <li><a href="#"><img src="./images/logo/resources-n1.svg" class="resources__logo"
+              alt="Научно-популярное интернет-издание н+1." target="_blank"></a></li>
+          <li><a href="#"><img src="./images/logo/resources-strelka.svg" class="resources__logo"
+              alt="Институт медиа, архитектуры и дизайна Стрелка." target="_blank"></a></li>
+          <li><a href="#"><img src="./images/logo/resources-polka.svg" class="resources__logo"
+              alt="Образовательный проект о самых важных русских книгах полка." target="_blank"></a></li>
+          </ul>
       </section>
     </main>
     <footer class="footer">
-      <ul class="footer__columns">
-        <li class="footer__column footer__column_content_copyright">
+      <div class="footer__columns">
+        <div class="footer__column footer__column_content_copyright">
           <img src="./images/logo_place_footer.svg" class="logo logo_place_footer" alt="Логотип Яндекс Практикум">
           <p class="footer__author">&commat;2019. Виктор Абанькин</p>
-        </li>
-        <li class="footer__column footer__column_content_info">
+        </div>
+        <div class="footer__column footer__column_content_info">
           <h2 class="footer__column-heading">О Практикуме</h2>
-          <nav class="footer__column footer__column-links">
+          <nav class="footer__column-links">
             <a href="#" class="footer__column-link">Главная</a>
             <a href="#" class="footer__column-link">Концепция</a>
             <a href="#" class="footer__column-link">Наставники</a>
           </nav>
-        </li>
-        <li class="footer__column footer__column_content_social">
+        </div>
+        <div class="footer__column footer__column_content_social">
           <h2 class="footer__column-heading">Соцсети</h2>
-          <nav class="footer__column footer__column-links">
+          <nav class="footer__column-links">
             <a href="#" class="footer__column-link"><img class="footer__social-icon"
-                src="./images/facebook_color_white.svg" alt="">Facebook</a>
+                src="./images/facebook_color_white.svg" alt="Фейсбук.">Facebook</a>
             <a href="#" class="footer__column-link"><img class="footer__social-icon" src="./images/vk_color_white.svg"
-                alt="">ВКонтакте</a>
+                alt="Вконтакте.">ВКонтакте</a>
             <a href="#" class="footer__column-link"><img class="footer__social-icon"
-                src="./images/instagram_color_white.svg" alt="">instagram</a>
+                src="./images/instagram_color_white.svg" alt="Инстаграм.">instagram</a>
           </nav>
-        </li>
-      </ul>
+        </div>
+      </div>
     </footer>
   </div>
 </body>
