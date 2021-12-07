@@ -73,10 +73,12 @@
       <section class="video">
         <h2 class="section-title">Видео нa TED</h2>
         <p class="section-subtitle">Для тех, кто любит прокрастинировать</p>
-        <ul class="video__iframes">
-          <li><iframe src="https://www.youtube.com/embed/arj7oStGLkU" class="video__iframe"></iframe></li>
-          <li><iframe src="https://www.youtube.com/embed/5MgBikgcWnY" class="video__iframe"></iframe></li>
-        </ul>
+        <div class="video__iframes">
+          <!--Вернул к прежнему состоянию, без списка. При выделении этих блоков в список некорректно работает отступ между ними. Не понимаю как сделать правильно.
+          Есть вариант передать правила по отстпам тегу li, но это не по БЭМ. Задать класс тегу li? Но этого нет в брифе. Замечание о выделении блоков в список было необязательным-->
+          <iframe src="https://www.youtube.com/embed/arj7oStGLkU" class="video__iframe"></iframe>
+          <iframe src="https://www.youtube.com/embed/5MgBikgcWnY" class="video__iframe"></iframe>
+        </div>
       </section>
       <section class="oakley">
         <div class="two-columns">
@@ -142,10 +144,10 @@
           <p class="khan__author">Салман Хан</p>
           <h2 class="khan__title">Весь мир — школа</h2>
           <blockquote class="khan__quote">
-            <p>Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему
+            Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему
             миру. Книгу «Весь мир — школа» нужно прочитать всем,
             кто занимается образованием — так учащиеся повсюду смогут получить навыки и знания, которые приносят успех в
-            школе, карьере и жизни.</p>
+            школе, карьере и жизни.
           </blockquote>
           <p class="khan__quote-author">Джордж Лукас</p>
           <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
@@ -161,44 +163,44 @@
         <ul class="table table_theme_dark">
           <li class="table__cell table__cell_theme_dark">
             <h3 class="table__heading table__heading_theme_dark">1</h3>
-            <p class="table__text table__text_theme-dark">Выберите привлекательный проект.</p>
+            <p class="table__text table__text_theme_dark">Выберите привлекательный проект.</p>
           </li>
           <li class="table__cell table__cell_theme_dark">
             <h3 class="table__heading table__heading_theme_dark">2</h3>
-            <p class="table__text table__text_theme-dark">Сосредоточьтесь на каком-то одном навыке.</p>
+            <p class="table__text table__text_theme_dark">Сосредоточьтесь на каком-то одном навыке.</p>
           </li>
           <li class="table__cell table__cell_theme_dark">
             <h3 class="table__heading table__heading_theme_dark">3</h3>
-            <p class="table__text table__text_theme-dark">Определите целевой уровень мастерства.</p>
+            <p class="table__text table__text_theme_dark">Определите целевой уровень мастерства.</p>
           </li>
           <li class="table__cell table__cell_theme_dark">
             <h3 class="table__heading table__heading_theme_dark">4</h3>
-            <p class="table__text table__text_theme-dark">Разбейте навык на элементы.</p>
+            <p class="table__text table__text_theme_dark">Разбейте навык на элементы.</p>
           </li>
           <li class="table__cell table__cell_theme_dark">
             <h3 class="table__heading table__heading_theme_dark">5</h3>
-            <p class="table__text table__text_theme-dark">Приготовьте всё необходимое для занятий.</p>
+            <p class="table__text table__text_theme_dark">Приготовьте всё необходимое для занятий.</p>
           </li>
           <li class="table__cell table__cell_theme_dark">
             <h3 class="table__heading table__heading_theme_dark">6</h3>
-            <p class="table__text table__text_theme-dark">Устраните препятствия для занятий.</p>
+            <p class="table__text table__text_theme_dark">Устраните препятствия для занятий.</p>
           </li>
           <li class="table__cell table__cell_theme_dark">
             <h3 class="table__heading table__heading_theme_dark">7</h3>
-            <p class="table__text table__text_theme-dark">Выделите специальное время для занятий.</p>
+            <p class="table__text table__text_theme_dark">Выделите специальное время для занятий.</p>
           </li>
           <li class="table__cell table__cell_theme_dark">
             <h3 class="table__heading table__heading_theme_dark">8</h3>
-            <p class="table__text table__text_theme-dark">Создайте быстрые петли обратной связи.</p>
+            <p class="table__text table__text_theme_dark">Создайте быстрые петли обратной связи.</p>
           </li>
           <li class="table__cell table__cell_theme_dark">
             <h3 class="table__heading table__heading_theme_dark">9</h3>
-            <p class="table__text table__text_theme-dark">Занимайтесь по расписанию, короткими интенсивными интервалами.
+            <p class="table__text table__text_theme_dark">Занимайтесь по расписанию, короткими интенсивными интервалами.
             </p>
           </li>
           <li class="table__cell table__cell_theme_dark">
             <h3 class="table__heading table__heading_theme_dark">10</h3>
-            <p class="table__text table__text_theme-dark">Уделяйте внимание количеству и скорости.</p>
+            <p class="table__text table__text_theme_dark">Уделяйте внимание количеству и скорости.</p>
           </li>
         </ul>
         <div class="kaufman__triangle rotation"></div>
@@ -208,14 +210,14 @@
         <p class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</p>
         <ul class="resources__logo-zone">
           <li><a href="#" target="_blank"><img src="./images/logo/resources-arzamas.svg" class="resources__logo"
-              alt="Просветительский проект арзамас."></a></li>
+                alt="Просветительский проект арзамас."></a></li>
           <li><a href="#" target="_blank"><img src="./images/logo/resources-n1.svg" class="resources__logo"
-              alt="Научно-популярное интернет-издание н+1."></a></li>
+                alt="Научно-популярное интернет-издание н+1."></a></li>
           <li><a href="#" target="_blank"><img src="./images/logo/resources-strelka.svg" class="resources__logo"
-              alt="Институт медиа, архитектуры и дизайна Стрелка."></a></li>
+                alt="Институт медиа, архитектуры и дизайна Стрелка."></a></li>
           <li><a href="#" target="_blank"><img src="./images/logo/resources-polka.svg" class="resources__logo"
-              alt="Образовательный проект о самых важных русских книгах полка."></a></li>
-          </ul>
+                alt="Образовательный проект о самых важных русских книгах полка."></a></li>
+        </ul>
       </section>
     </main>
     <footer class="footer">
