@@ -22,4 +22,4 @@
 Добавлена анимация, интерактивность ссылок.
 
 ### Ознакомиться можно по ссылке:
-[How to learn](https://dhoine345.github.io/how-to-learn/)
+[Научиться учиться](https://dhoine345.github.io/how-to-learn/)
